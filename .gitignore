@@ -1,0 +1,37 @@
+# Sensible Kundendaten
+*-intern.md
+*-intern.txt
+*-kalkulation.xlsx
+*-kalkulation.csv
+*-preise-intern.md
+
+# Persönliche Notizen
+notizen/
+private/
+
+# API Keys und Umgebungsvariablen
+.env
+.env.local
+.env.production
+
+# Temporäre Dateien
+*.tmp
+*.bak
+.DS_Store
+
+# IDE-spezifische Dateien
+.idea/
+.vscode/
+*.swp
+
+# Log-Dateien
+*.log
+logs/
+
+# Vertrauliche Dokumente
+vertraulich/
+confidential/
+
+# Analyse-Ergebnisse mit Kundendaten
+*-analyse-intern.md
+*-audit-intern.pdf

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angebot Barrierefreiheit - Südpfalz Therme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #0066cc;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0066cc;
+        }
+        
+        .contact-info {
+            text-align: right;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        h1 {
+            color: #0066cc;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        h3 {
+            color: #555;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #0066cc;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ff9800;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .success-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .price-highlight {
+            background: #0066cc;
+            color: white;
+            font-weight: bold;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .timeline {
+            margin: 20px 0;
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .timeline-date {
+            background: #0066cc;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            min-width: 120px;
+            text-align: center;
+            margin-right: 20px;
+        }
+        
+        .timeline-content {
+            flex: 1;
+            padding-top: 8px;
+        }
+        
+        .cta {
+            background: #0066cc;
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            margin: 40px 0;
+            border-radius: 8px;
+        }
+        
+        .cta h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .signature {
+            margin-top: 40px;
+        }
+        
+        .check {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .savings {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        @media print {
+            body {
+                font-size: 11pt;
+            }
+            
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+            
+            h2 {
+                page-break-before: auto;
+                page-break-after: avoid;
+            }
+            
+            table {
+                page-break-inside: avoid;
+            }
+            
+            .cta {
+                page-break-inside: avoid;
+            }
+        }
+        
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .price-table {
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 30px 0;
+        }
+        
+        .price-table th {
+            background: #0066cc;
+            color: white;
+        }
+        
+        .total-row {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <div class="logo">MINICON eG</div>
+                <div style="color: #666; margin-top: 5px;">Digitale Barrierefreiheit</div>
+            </div>
+            <div class="contact-info">
+                Minicon eG<br>
+                Michael Nikolaus<br>
+                Tel: 0151 27600607<br>
+                www.minicon.eu
+            </div>
+        </div>
+        
+        <h1>ANGEBOT</h1>
+        <div class="subtitle">Barrierefreie Website gemäß WCAG 2.1 / BITV 2.0</div>
+        
+        <div class="meta-info">
+            <div>
+                <strong>An:</strong><br>
+                Staatsbad Bad Bergzabern GmbH<br>
+                Südpfalz Therme<br>
+                Bad Bergzabern
+            </div>
+            <div style="text-align: right;">
+                <strong>Datum:</strong> 27. Juni 2025<br>
+                <strong>Angebots-Nr.:</strong> 2025-BF-SPT-001<br>
+                <strong>Gültigkeit:</strong> 30 Tage
+            </div>
+        </div>
+        
+        <div class="warning-box">
+            <strong>⚠️ Dringender Handlungsbedarf:</strong> Nur noch 4 Monate bis zur gesetzlichen Deadline am 28.06.2025!<br>
+            Bei Verstößen drohen Bußgelder bis zu 100.000 EUR.
+        </div>
+        
+        <h2>1. Ausgangssituation</h2>
+        <p>Die Südpfalz Therme steht vor der <strong>gesetzlichen Verpflichtung</strong>, ihre Website bis zum <strong>28. Juni 2025</strong> barrierefrei zu gestalten. Mit nur noch 4 Monaten bis zur Deadline besteht dringender Handlungsbedarf, um:</p>
+        <ul>
+            <li><span class="check">✓</span> Gesetzliche Anforderungen zu erfüllen</li>
+            <li><span class="check">✓</span> Bußgelder bis 100.000 EUR zu vermeiden</li>
+            <li><span class="check">✓</span> Allen Gästen gleichen Zugang zu ermöglichen</li>
+            <li><span class="check">✓</span> Das positive Image als inklusive Therme zu stärken</li>
+        </ul>
+        
+        <h2>2. Unsere Lösung: "Rechtssicher Digital" Paket</h2>
+        
+        <h3>2.1 Leistungsumfang</h3>
+        <p>Wir bieten Ihnen eine <strong>pragmatische Lösung</strong>, die alle gesetzlichen Mindestanforderungen erfüllt, ohne unnötige Kosten zu verursachen:</p>
+        
+        <div class="info-box">
+            <h4>Technische Barrierefreiheit:</h4>
+            <ul>
+                <li><span class="check">✓</span> Vollständige Tastaturnavigation für alle Menüs und Funktionen</li>
+                <li><span class="check">✓</span> Screenreader-Optimierung der Hauptseiten</li>
+                <li><span class="check">✓</span> Skip-Navigation und Orientierungshilfen</li>
+                <li><span class="check">✓</span> ARIA-Labels für interaktive Elemente</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h4>Visuelle Barrierefreiheit:</h4>
+            <ul>
+                <li><span class="check">✓</span> Kontrastanpassungen gemäß WCAG 2.1 AA</li>
+                <li><span class="check">✓</span> Alt-Texte für die 50 wichtigsten Bilder</li>
+                <li><span class="check">✓</span> Fokus-Indikatoren verstärken</li>
+                <li><span class="check">✓</span> Responsive Design Optimierung</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h4>Formulare & Interaktion:</h4>
+            <ul>
+                <li><span class="check">✓</span> Kontaktformular barrierefrei gestalten</li>
+                <li><span class="check">✓</span> Newsletter-Anmeldung optimieren</li>
+                <li><span class="check">✓</span> Alternative Buchungslösung (Telefon/E-Mail prominent)</li>
+                <li><span class="check">✓</span> Fehlermeldungen mit Screenreader-Support</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h4>Rechtliche Dokumentation:</h4>
+            <ul>
+                <li><span class="check">✓</span> Barrierefreiheitserklärung (gesetzlich vorgeschrieben)</li>
+                <li><span class="check">✓</span> Feedback-Mechanismus implementieren</li>
+                <li><span class="check">✓</span> Konformitätsbewertung BITV 2.0</li>
+                <li><span class="check">✓</span> Dokumentation für Behörden</li>
+            </ul>
+        </div>
+        
+        <h3>2.2 Clevere Einsparungen</h3>
+        <p>Durch unseren pragmatischen Ansatz sparen Sie erhebliche Kosten:</p>
+        
+        <table>
+            <tr>
+                <th>Leistung</th>
+                <th>Vollversion</th>
+                <th>Unsere Lösung</th>
+                <th>Ihre Ersparnis</th>
+            </tr>
+            <tr>
+                <td>Leichte Sprache (komplett)</td>
+                <td>30.000 EUR</td>
+                <td>Nur Kerninfos</td>
+                <td class="savings">25.000 EUR</td>
+            </tr>
+            <tr>
+                <td>Gebärdensprach-Videos</td>
+                <td>18.000 EUR</td>
+                <td>Nicht nötig</td>
+                <td class="savings">18.000 EUR</td>
+            </tr>
+            <tr>
+                <td>Alle 287 Bilder</td>
+                <td>8.000 EUR</td>
+                <td>Top 50 Bilder</td>
+                <td class="savings">6.000 EUR</td>
+            </tr>
+            <tr>
+                <td>70 PDFs barrierefrei</td>
+                <td>14.000 EUR</td>
+                <td>Nur essenzielle</td>
+                <td class="savings">12.000 EUR</td>
+            </tr>
+            <tr class="total-row">
+                <td><strong>Gesamtersparnis</strong></td>
+                <td></td>
+                <td></td>
+                <td class="savings"><strong>61.000 EUR</strong></td>
+            </tr>
+        </table>
+        
+        <h2>3. Investition & Förderung</h2>
+        
+        <h3>3.1 Preisübersicht</h3>
+        
+        <table class="price-table">
+            <tr>
+                <th>Position</th>
+                <th style="text-align: right;">Betrag</th>
+            </tr>
+            <tr>
+                <td><strong>Angebotspreis netto</strong></td>
+                <td style="text-align: right;"><strong>24.900 EUR</strong></td>
+            </tr>
+            <tr>
+                <td>zzgl. 19% MwSt.</td>
+                <td style="text-align: right;">4.731 EUR</td>
+            </tr>
+            <tr class="price-highlight">
+                <td><strong>Gesamtbetrag brutto</strong></td>
+                <td style="text-align: right;"><strong>29.631 EUR</strong></td>
+            </tr>
+        </table>
+        
+        <div class="info-box">
+            <h4>💡 Wichtiger Hinweis zu Förderungen:</h4>
+            <p>Für Ihr Projekt stehen verschiedene Förderprogramme zur Verfügung. Gerne beraten wir Sie zu:</p>
+            <ul>
+                <li>• <strong>go-digital Förderung:</strong> Bis zu 50% der Projektkosten (max. 16.500 EUR)</li>
+                <li>• <strong>Land Baden-Württemberg:</strong> Zusätzliche Förderung für digitale Barrierefreiheit</li>
+                <li>• <strong>Bundesteilhabepreis:</strong> Bewerbung als Best Practice möglich</li>
+            </ul>
+            <p><strong>Hinweis:</strong> Die Förderungen werden direkt an Sie ausgezahlt. Wir unterstützen Sie gerne bei der Antragstellung.</p>
+        </div>
+        
+        <h2>4. Zeitplan</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">Juli 2025</div>
+                <div class="timeline-content">
+                    <strong>Phase 1: Vorbereitung</strong><br>
+                    • Woche 1: Förderberatung & Antragstellung<br>
+                    • Woche 2-3: Technisches Audit<br>
+                    • Woche 4: Projektplan & Kickoff
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-date">August 2025</div>
+                <div class="timeline-content">
+                    <strong>Phase 2: Umsetzung</strong><br>
+                    • Woche 1-2: Navigation & Struktur<br>
+                    • Woche 3: Formulare & Kontraste<br>
+                    • Woche 4: Bilder & Inhalte
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-date">September 2025</div>
+                <div class="timeline-content">
+                    <strong>Phase 3: Abschluss</strong><br>
+                    • Woche 1: Testing & Optimierung<br>
+                    • Woche 2: Dokumentation<br>
+                    • Woche 3: Übergabe & Schulung<br>
+                    <strong style="color: #28a745;">➔ Fertigstellung: 15.09.2025 (3 Monate vor Deadline!)</strong>
+                </div>
+            </div>
+        </div>
+        
+        <h2>5. Garantien & Service</h2>
+        
+        <div class="success-box">
+            <h4>Unsere Garantien:</h4>
+            <ul>
+                <li><span class="check">✓</span> <strong>Gesetzeskonformität</strong> zum 28.06.2025</li>
+                <li><span class="check">✓</span> <strong>Bestehen</strong> der BITV-Basisprüfung</li>
+                <li><span class="check">✓</span> <strong>Festpreis</strong> ohne versteckte Kosten</li>
+                <li><span class="check">✓</span> <strong>3 Monate</strong> Gewährleistung</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h4>Inklusive Service:</h4>
+            <ul>
+                <li><span class="check">✓</span> Förderantrag-Unterstützung</li>
+                <li><span class="check">✓</span> 2 Stunden Mitarbeiterschulung</li>
+                <li><span class="check">✓</span> Redaktionsleitfaden</li>
+                <li><span class="check">✓</span> 6 Monate E-Mail-Support</li>
+            </ul>
+        </div>
+        
+        <h2>6. Optionale Erweiterungen</h2>
+        <p>Falls Sie später weitere Optimierungen wünschen:</p>
+        
+        <table>
+            <tr>
+                <th>Erweiterung</th>
+                <th style="text-align: right;">Preis</th>
+            </tr>
+            <tr>
+                <td>Weitere 50 Bilder mit Alt-Texten</td>
+                <td style="text-align: right;">2.500 EUR</td>
+            </tr>
+            <tr>
+                <td>10 PDFs barrierefrei</td>
+                <td style="text-align: right;">2.000 EUR</td>
+            </tr>
+            <tr>
+                <td>Leichte Sprache (5 Seiten)</td>
+                <td style="text-align: right;">3.500 EUR</td>
+            </tr>
+            <tr>
+                <td>Gebärdensprach-Video (3 Min.)</td>
+                <td style="text-align: right;">4.500 EUR</td>
+            </tr>
+        </table>
+        
+        <h2>7. Warum Minicon der richtige Partner ist</h2>
+        <ul>
+            <li><span class="check">✓</span> <strong>Spezialisiert</strong> auf pragmatische Barrierefreiheit</li>
+            <li><span class="check">✓</span> <strong>Erfahrung</strong> mit öffentlichen Einrichtungen</li>
+            <li><span class="check">✓</span> <strong>Expertise</strong> in Förderberatung</li>
+            <li><span class="check">✓</span> <strong>Branchen-Know-how</strong> Thermen & Bäder</li>
+            <li><span class="check">✓</span> <strong>Transparente</strong> Festpreise</li>
+        </ul>
+        
+        <div class="cta">
+            <h3>Ihre nächsten Schritte</h3>
+            <ol style="text-align: left; color: white; margin-left: 20px;">
+                <li>Kostenloses Erstgespräch vereinbaren (30 Min.)</li>
+                <li>Förderberatung in Anspruch nehmen</li>
+                <li>Auftragserteilung bis spätestens 15. Juli 2025</li>
+                <li>Entspannt die Deadline einhalten</li>
+            </ol>
+        </div>
+        
+        <h2>8. Zusammenfassung</h2>
+        
+        <div class="success-box">
+            <strong>Ihre Investition:</strong> 24.900 EUR netto (29.631 EUR brutto)<br>
+            <strong>Mit Förderung:</strong> Bis zu 50% Ersparnis möglich<br>
+            <strong>Zeitrahmen:</strong> 8 Wochen<br>
+            <strong>Fertigstellung:</strong> September 2025<br>
+            <strong>Garantie:</strong> Gesetzeskonform zum Stichtag
+        </div>
+        
+        <div class="warning-box">
+            <strong>Wichtiger Hinweis:</strong> Die Fördermittel sind begrenzt und die Nachfrage steigt stark an. Eine frühzeitige Beauftragung sichert Ihnen:
+            <ul style="margin-top: 10px;">
+                <li>• Die besten Förderkonditionen</li>
+                <li>• Einen entspannten Zeitplan</li>
+                <li>• Günstigere Preise (ab März 2025 +20% durch Marktlage)</li>
+            </ul>
+        </div>
+        
+        <div class="signature">
+            <p><strong>Ansprechpartner:</strong></p>
+            <p>
+                Michael Nikolaus<br>
+                Geschäftsführer<br>
+                Minicon eG<br>
+                Tel: 0151 27600607<br>
+                E-Mail: info@minicon.eu<br>
+                Web: www.minicon.eu
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p><em>Dieses Angebot ist 30 Tage gültig. Alle Preise verstehen sich netto zzgl. der gesetzlichen Mehrwertsteuer.</em></p>
+            <p style="margin-top: 20px; text-align: center; font-style: italic; color: #0066cc;">
+                „Wir machen Ihre Website nicht perfekt barrierefrei.<br>
+                Wir machen sie rechtssicher barrierefrei.<br>
+                Und das zum fairen Festpreis."
+            </p>
+        </div>
+    </div>
+</body>
+</html>
