@@ -1,4 +1,4 @@
-# Angebot: KI-gestützte Barrierefreiheit für Südpfalz Therme
+# Angebot: Barrierefreiheit für Südpfalz Therme
 
 **Angebotsnummer**: 2024-SPT-001  
 **Datum**: 27.06.2025  
@@ -6,156 +6,155 @@
 
 ## Executive Summary
 
-Die Südpfalz Therme steht vor der gesetzlichen Verpflichtung, ihre digitale Präsenz bis zum 28. Juni 2025 barrierefrei zu gestalten. Wir bieten eine revolutionäre Lösung, die durch den Einsatz modernster KI-Technologie **80% der Kosten** gegenüber traditionellen Ansätzen einspart und dabei **100% BITV 2.0 Konformität** garantiert.
+Die Südpfalz Therme muss ihre Website bis zum 28. Juni 2025 barrierefrei gestalten (BITV 2.0). Wir bieten eine kosteneffiziente Lösung durch den gezielten Einsatz von KI-Tools, die den manuellen Aufwand reduzieren und dabei vollständige Gesetzeskonformität gewährleisten.
 
-**Unser Angebot: 9.900€ (Festpreis)**
+**Festpreisangebot: 14.900€ (netto)**
 
 ## 1. Ausgangslage
 
 - **Gesetzliche Deadline**: 28. Juni 2025 (BITV 2.0)
-- **Risiko bei Nichteinhaltung**: Bußgelder bis 100.000€
-- **Aktuelle Website**: Nicht barrierefrei
-- **Traditionelle Lösungen**: 24.900€ - 128.000€
+- **Betroffene Website**: suedpfalz-therme.de
+- **Anforderung**: WCAG 2.1 Level AA Konformität
+- **Status**: Aktuell nicht barrierefrei
 
-## 2. Unsere KI-Lösung im Detail
+## 2. Gesetzliche Anforderungen im Detail
 
-### 2.1 Automatisierte WCAG-Analyse (Woche 1)
-- **KI-Tool**: axe DevTools Pro mit Custom AI Extensions
-- **Leistung**: Vollständiger Scan aller Seiten
-- **Output**: Priorisierte Fehlerliste mit Lösungsvorschlägen
-- **Ersparnis**: 40 Stunden Manualarbeit
+Die BITV 2.0 fordert die Einhaltung der Web Content Accessibility Guidelines (WCAG) 2.1 auf Konformitätsstufe AA. Dies umfasst:
 
-### 2.2 KI-gestützte Alt-Text-Generierung (Woche 2-3)
-- **Technologie**: GPT-4 Vision API
-- **Umfang**: Alle Bilder der Website
-- **Features**:
-  - Kontextbezogene Beschreibungen
-  - Mehrsprachigkeit (DE/EN/FR)
-  - Automatische Wellness-Fachbegriffe
-- **Qualität**: Menschliche Überprüfung nur bei kritischen Bildern
+### Wahrnehmbarkeit
+- Alle Nicht-Text-Inhalte benötigen Textalternativen
+- Ausreichende Farbkontraste (4,5:1 für normalen Text)
+- Anpassbare Textgrößen ohne Funktionsverlust
 
-### 2.3 Automatische Farbkontrast-Optimierung (Woche 3)
-- **KI-Analyse**: Erkennung aller Kontrastprobleme
-- **Smart Fix**: Minimale Anpassungen unter Beibehaltung des CI
-- **A/B Testing**: KI-gestützte Optimierung der Lesbarkeit
+### Bedienbarkeit  
+- Vollständige Tastaturbedienbarkeit
+- Ausreichend Zeit für Interaktionen
+- Keine anfallsauslösenden Inhalte
+- Klare Navigation und Orientierung
 
-### 2.4 Strukturelle Verbesserungen (Woche 4)
-- **Semantisches HTML**: KI-Vorschläge für bessere Struktur
-- **ARIA-Labels**: Automatische Generierung
-- **Tastaturnavigation**: KI-optimierte Tab-Reihenfolge
+### Verständlichkeit
+- Lesbare und verständliche Texte
+- Vorhersehbare Funktionsweise
+- Hilfe bei der Fehlervermeidung
 
-### 2.5 PDF-Barrierefreiheit (Woche 5)
-- **Automatische Konvertierung**: Alle PDFs werden barrierefrei
-- **KI-Strukturierung**: Lesereihenfolge und Tags
-- **OCR mit KI**: Auch gescannte Dokumente werden zugänglich
+### Robustheit
+- Kompatibilität mit assistiven Technologien
+- Valider und semantischer HTML-Code
 
-### 2.6 Continuous Monitoring (Woche 6-8)
-- **GitHub Actions Pipeline**: Automatische Tests bei jeder Änderung
-- **KI-Dashboard**: Live-Überwachung der Barrierefreiheit
-- **Monatliche Reports**: Automatisch generiert
+## 3. Unser Lösungsansatz
 
-## 3. Leistungsumfang
+### 3.1 Analyse und Bestandsaufnahme (Woche 1)
+- **Automatisierte WCAG-Prüfung**: Vollständiger Scan mit axe DevTools
+- **Manuelle Expertenprüfung**: Kritische Bereiche und User Journeys
+- **Priorisierung**: Fehlerkategorien nach Schweregrad
+- **Dokumentation**: Detaillierter Mängelbericht
 
-### Inklusive:
-✅ Vollständige WCAG 2.1 AA Konformität  
-✅ BITV 2.0 Zertifizierung  
-✅ Alle Alt-Texte durch KI generiert  
-✅ Farbkontrast-Optimierung  
-✅ PDF-Barrierefreiheit (bis 50 Dokumente)  
+### 3.2 Alt-Texte und Bildbeschreibungen (Woche 2-3)
+- **KI-Unterstützung**: GPT-4 Vision für Bildanalyse
+- **Manuelle Qualitätssicherung**: Alle generierten Texte werden geprüft
+- **Kontextbezogen**: Berücksichtigung des Wellness-Kontexts
+- **Mehrsprachigkeit**: Deutsche Haupttexte
+
+### 3.3 Technische Anpassungen (Woche 3-4)
+- **Farbkontraste**: Anpassung aller nicht-konformen Elemente
+- **Tastaturnavigation**: Implementierung durchgängiger Bedienbarkeit
+- **Semantisches HTML**: Strukturierung mit korrekten HTML5-Elementen
+- **ARIA-Attribute**: Ergänzung wo notwendig
+
+### 3.4 Formulare und Interaktive Elemente (Woche 4-5)
+- **Formular-Labels**: Eindeutige Beschriftungen
+- **Fehlermeldungen**: Verständliche Hinweise
+- **Fokus-Indikatoren**: Sichtbare Hervorhebung
+- **Zeitlimits**: Anpassbare Timeouts
+
+### 3.5 Dokumentation und Compliance (Woche 5-6)
+- **Barrierefreiheitserklärung**: Gesetzlich vorgeschriebenes Dokument
+- **Feedback-Mechanismus**: Kontaktmöglichkeit für Nutzer
+- **Testprotokolle**: Nachweise der Prüfungen
+- **Schulungsunterlagen**: Für die Redaktion
+
+## 4. Leistungsumfang
+
+### Im Preis enthalten:
+✅ Vollständige WCAG 2.1 AA Analyse  
+✅ Umsetzung aller kritischen Anforderungen  
+✅ Alt-Texte für alle Bilder (KI-unterstützt)  
+✅ Farbkontrast-Anpassungen  
 ✅ Tastaturnavigation  
-✅ Screenreader-Optimierung  
-✅ Mobile Barrierefreiheit  
-✅ 6 Monate Monitoring  
-✅ Schulung für 2 Mitarbeiter  
+✅ Barrierefreiheitserklärung  
+✅ 3 Monate Nachbesserungsgarantie  
+✅ Basisdokumentation  
 
-### Technologie-Stack:
-- GPT-4 Vision für Bildanalyse
-- Claude 3 für Textoptimierung
-- GitHub Actions für CI/CD
-- axe DevTools für Testing
-- Custom Python Scripts für Automatisierung
+### Optionale Zusatzleistungen:
+- PDF-Barrierefreiheit: 80€ pro Dokument
+- Erweiterte Schulung: 500€ pro Tag
+- Monitoring nach Projektende: 199€/Monat
 
-## 4. Zeitplan
+## 5. Zeitplan
 
 | Phase | Dauer | Ergebnis |
 |-------|-------|----------|
-| Analyse & Setup | 1 Woche | KI-Pipeline steht |
-| Alt-Texte & Struktur | 2 Wochen | 80% Barrierefreiheit |
-| Feinschliff & Tests | 2 Wochen | 100% Konformität |
-| Dokumentation | 1 Woche | Übergabe & Schulung |
-| Go-Live | 2 Wochen | Launch & Monitoring |
+| Analyse | 1 Woche | Vollständiger Mängelbericht |
+| Alt-Texte | 2 Wochen | Alle Bilder beschriftet |
+| Technik | 2 Wochen | WCAG-konforme Website |
+| Dokumentation | 1 Woche | Compliance-Dokumente |
 
-**Gesamtdauer: 8 Wochen** (Fertigstellung: April 2025)
+**Gesamtdauer: 6 Wochen** (Fertigstellung garantiert vor Deadline)
 
-## 5. Investition
+## 6. Investition
 
-### Paket "KI-Barrierefreiheit Komplett"
-**Festpreis: 9.900€** (netto)
+### Paket "BITV 2.0 Compliance"
+**Festpreis: 14.900€** (netto)
 
 ### Zahlungsbedingungen:
-- 30% bei Auftragserteilung (2.970€)
-- 40% nach Umsetzung (3.960€)
-- 30% nach erfolgreicher Zertifizierung (2.970€)
+- 30% bei Auftragserteilung (4.470€)
+- 40% nach technischer Umsetzung (5.960€)
+- 30% nach Abnahme (4.470€)
 
-### Garantie:
-- 100% BITV 2.0 konform oder Geld zurück
-- Kostenlose Nachbesserung bei Mängeln
-- 6 Monate Support inklusive
+### Effizienzsteigerung durch KI:
+- **Alt-Text-Generierung**: 70% Zeitersparnis durch KI-Vorschläge
+- **Kontrastprüfung**: Automatische Analyse statt manueller Prüfung
+- **Code-Validierung**: KI-gestützte Fehlersuche
+- **Testing**: Automatisierte Prüfprozesse
 
-## 6. Warum KI-Automatisierung?
+## 7. Garantien
 
-### Kostenvergleich:
-| Anbieter | Preis | Dauer | Methode |
-|----------|-------|-------|---------|
-| Wettbewerber A | 24.900€ | 6 Monate | Manuell |
-| Wettbewerber B | 48.000€ | 9 Monate | Teilautomatisiert |
-| Wettbewerber C | 128.000€ | 12 Monate | Full Service |
-| **Unser Angebot** | **9.900€** | **2 Monate** | **KI-Automatisiert** |
+- BITV 2.0 konforme Umsetzung
+- Rechtzeitige Fertigstellung vor der Deadline
+- 3 Monate kostenlose Nachbesserung bei Mängeln
+- Dokumentierte Übergabe
 
-### Ihre Vorteile:
-- ⚡ **5x schneller** als manuelle Umsetzung
-- 💰 **80% günstiger** als Wettbewerber
-- 🤖 **Zukunftssicher** durch KI-Monitoring
-- 📊 **Messbar** durch automatische Reports
-- 🎯 **Präzise** durch Machine Learning
+## 8. Warum Minicon eG?
 
-## 7. Referenzen & Expertise
-
-- 15+ Jahre Webentwicklung
-- Spezialisierung auf Barrierefreiheit seit 2018
-- Erste KI-Implementierungen seit 2023
-- Zertifizierter IAAP-Accessibility-Specialist
-
-## 8. Nächste Schritte
-
-1. **Kostenloses Erstgespräch** (30 Min.)
-2. **Live-Demo** unserer KI-Tools
-3. **Testlauf** auf 5 Seiten Ihrer Website
-4. **Verbindliches Angebot** nach Analyse
+- 15+ Jahre Erfahrung in Webentwicklung
+- Spezialisierung auf Barrierefreiheit
+- Effizienter KI-Einsatz zur Kostenreduktion
+- Festpreisgarantie ohne versteckte Kosten
 
 ## 9. FAQ
 
-**Q: Wie sicher ist die KI-Lösung?**  
-A: Alle KI-Tools werden von Menschen überprüft. Kritische Elemente durchlaufen manuelle QA.
+**Q: Ist die KI-generierte Lösung rechtssicher?**  
+A: Ja, alle KI-generierten Inhalte werden von Experten geprüft und erfüllen die gesetzlichen Anforderungen.
 
-**Q: Was passiert nach den 6 Monaten Monitoring?**  
-A: Optional buchbar: Monitoring-Verlängerung für 99€/Monat.
+**Q: Was ist nach Projektende?**  
+A: Die Website ist vollständig barrierefrei. Optional bieten wir einen Wartungsvertrag für kontinuierliche Compliance.
 
-**Q: Können wir die KI-Tools selbst nutzen?**  
-A: Ja, Schulung und Dokumentation sind inklusive.
+**Q: Können wir einzelne Leistungen buchen?**  
+A: Das Angebot ist als Komplettpaket konzipiert, um vollständige Gesetzeskonformität zu gewährleisten.
 
-## 10. Kontakt & Beauftragung
+## 10. Nächste Schritte
+
+1. **Auftragserteilung** per E-Mail oder Telefon
+2. **Kick-off Meeting** zur Detailabstimmung
+3. **Zugang zur Website** für technische Analyse
+4. **Start der Umsetzung**
+
+## Kontakt
 
 **Michael Nikolaus**  
 Minicon eG  
-E-Mail: [Ihre E-Mail]  
-Telefon: [Ihre Nummer]
-
-**Angebot annehmen:**  
-✉️ Per E-Mail mit Angebotsnummer  
-📱 Telefonisch unter [Nummer]  
-💻 Online-Beauftragung: [Link]
+[Kontaktdaten]
 
 ---
 
-*Dieses Angebot wurde teilweise mit KI-Unterstützung erstellt - genau wie Ihre zukünftige barrierefreie Website!*
+*Dieses Angebot basiert auf einer Ersteinschätzung. Nach detaillierter Analyse können sich Anpassungen ergeben.*
